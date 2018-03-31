@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top"
+    android:background="@color/colorPrimaryDark"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@drawable/round_corner_bg"
+        android:layout_height="220dp">
+
+        <TextView
+            android:id="@+id/country"
+            android:textSize="18dp"
+            android:textStyle="bold|italic"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"
+            android:text="gddg" />
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageView"
+            android:weightSum="1"
+            android:layout_gravity="left"
+            android:id="@+id/radioGroup" >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="ans1"
+                android:id="@+id/ans1"
+                android:checked="false"
+                android:textSize="15dp"
+                android:buttonTint="@color/Black"
+                android:textColor="@color/Black"
+                android:layout_weight="0.10" />
+
+            <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="ans2"
+            android:id="@+id/ans2"
+            android:checked="false"
+                android:textSize="15dp"
+            android:buttonTint="@color/Black"
+            android:textColor="@color/Black"
+            android:layout_weight="0.10"  />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="ans3"
+                android:id="@+id/ans3"
+                android:checked="false"
+                android:textSize="15dp"
+                android:buttonTint="@color/Black"
+                android:textColor="@color/Black"
+                android:layout_weight="0.10"  />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="ans4"
+                android:id="@+id/ans4"
+                android:checked="false"
+                android:textColor="@color/Black"
+                android:buttonTint="@color/Black"
+                android:textSize="15dp"
+                android:layout_weight="0.10" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+       />
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/countrylabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rank"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/countrylabel" />
+
+    <TextView
+        android:id="@+id/populationlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/countrylabel"
+        android:visibility="gone"
+      />
+
+    <TextView
+        android:id="@+id/population"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/populationlabel" />
+
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="#000000"
+        android:visibility="gone"
+        android:padding="1dp" />
+
+
+
+
+</RelativeLayout>
